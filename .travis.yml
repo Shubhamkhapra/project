@@ -1,5 +1,5 @@
 language: node_js
-node_js :
+node_js:
   - "14"
 dist: trusty
 services:
@@ -8,7 +8,7 @@ services:
 env:
   - NODE_ENV=ci
   - PORT=3000
-cache: 
+cache:
   directories:
     - node_modules
     - client/node_modules
@@ -19,4 +19,3 @@ script:
   - nohup npm run stat &
   - sleep 3
   - npm run test
-
